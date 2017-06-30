@@ -127,7 +127,7 @@ angular.module('teacherModule').controller('teacherController', function ($scope
 
         });
     });
-
+    $scope.view = 'main';
 
     $scope.rowCollection = [
         {Name: 'Laurent', lastName: 'Renard',  balance: 102, email: 'whatever@gmail.com'},
@@ -135,6 +135,12 @@ angular.module('teacherModule').controller('teacherController', function ($scope
         {Name: 'Francoise', lastName: 'Frere',  balance: 42343, email: 'raymondef@gmail.com'}
     ];
 
+    $scope.viewMain = function(){
+        $scope.view = 'main';
+    }
+    $scope.viewAdd = function(){
+        $scope.view = 'add';
+    }
 });
 
 
