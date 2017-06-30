@@ -12,10 +12,10 @@ var con = mysql.createConnection({
     database: "yihui"
 });
 
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Database is Connected!");
-});
+// con.connect(function(err) {
+//     if (err) throw err;
+//     console.log("Database is Connected!");
+// });
 
 //Return id if found, otherwise return null
 exports.findUser = function(login, callback){
