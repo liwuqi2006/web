@@ -35,3 +35,7 @@ exports.addTeacher = function(req, res) {
 exports.test = function(req, res) {
       res.sendFile(path.join(__dirname+'/login.html'));
 };
+
+exports.login = function(req, res) {
+    res.sendFile(path.join(__dirname+'/login.html'));
+};
